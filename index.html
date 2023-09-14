@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Kalkulator Matematik Persegi</h1>
+        <div id="explanation">
+            <p>Persegi adalah sebuah bentuk geometri yang memiliki empat sisi yang sama panjang dan empat sudut yang sama besar (90 derajat)</p>
+            <img src="img/persegi.png" alt="Gambar Persegi">
+           
+        </div>
+        <div id="button-container">
+            <button id="calculate-area">Hitung Luas</button>
+            <button id="calculate-perimeter">Hitung Keliling</button>
+        </div>
+        <div id="formula" style="display: none;"></div>
+        <form id="calculator-form" style="display: none;">
+            <label for="sideLength">Panjang Sisi Persegi:</label>
+            <input type="number" id="sideLength" required>
+            <span id="error-message" class="error-message"></span> <!-- Tambahkan pesan kesalahan -->
+            <button type="submit">Hitung</button>
+            <button type="button" id="reset">Reset</button>
+            <button type="button" id="back" style="display: none;">Back</button> <!-- Tombol Back -->
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

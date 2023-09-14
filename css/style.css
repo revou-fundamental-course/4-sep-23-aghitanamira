@@ -1,0 +1,70 @@
+/* Style dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Style penjelasan awal */
+#explanation p {
+    font-style: italic;
+    color: #777;
+}
+
+/* Style tombol dan pesan kesalahan */
+#button-container button, #calculator-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#button-container button:hover, #calculator-form button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Style hasil dan rumus */
+#result-container {
+    margin-top: 20px;
+}
+
+#formula, #result {
+    display: none;
+}
+
+#formula h3 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Style gambar */
+img {
+    max-width: 100%;
+    height: auto;
+}
